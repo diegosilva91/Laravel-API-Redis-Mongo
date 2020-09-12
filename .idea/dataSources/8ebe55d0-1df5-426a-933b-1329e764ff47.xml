@@ -4,8 +4,10 @@
     <root id="1">
       <ServerVersion>4.2.9</ServerVersion>
     </root>
-    <schema id="2" parent="1">
+    <schema id="2" parent="1" name="accounts">
       <Current>1</Current>
     </schema>
+    <table id="3" parent="2" name="candidates"/>
+    <table id="4" parent="2" name="migrations"/>
   </database-model>
 </dataSource>
