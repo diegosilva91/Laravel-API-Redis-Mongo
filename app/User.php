@@ -2,13 +2,30 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+//use App\Candidate;
 
-class User extends Authenticatable
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Foundation\Auth\Access\Authorizable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Notifications\Notifiable;
+use Tymon\JWTAuth\Contracts\JWTSubject;
+//use Sametsahindogan\JWTRedis\Traits\JWTRedisHasRoles;
+//use Spatie\Permission\Traits\HasRoles;
+//use Maklad\Permission\Traits\HasRoles;
+//use Moloquent;
+
+class User extends Eloquent implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract, JWTSubject
 {
+    use Authenticatable, Authorizable, CanResetPassword;
     use Notifiable;
+    //use HasRoles;
+    protected $connection = 'mongodb';
+    //protected $collection = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +33,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'password', 'last_login','is_active','role_id','created_at'
     ];
 
     /**
@@ -25,7 +42,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        '_id',
     ];
 
     /**
@@ -34,6 +51,68 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'last_login' => 'datetime',
     ];
+    /**
+     * @var string[]
+     */
+    protected $dates = ['created_at'];
+
+    /**
+     * @var integer
+     */
+    protected $primaryKey = 'id';
+
+    public static function boot()
+    {
+        parent::boot();
+        static::saving(function($model) {
+            $first_user = self::select('id')->orderBy('id','desc')->first();
+            if(!$first_user){
+                $model->id=1;
+            }
+            else{
+                $model->id=$first_user->id+1;
+            }
+        });
+    }
+
+    public function candidates(){
+        return $this->hasMany(Candidate::class,'owner');
+    }
+    public function createdBy(){
+        return $this->hasMany(Candidate::class,'created_by');
+    }
+/*
+    /**
+     * Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+    public function assignRole($role="manager")
+    {
+        $role=\App\Role::where(["name"=>$role])->first();
+        if($role){
+            $this->role_id=$role->pluck('id');
+        }
+        else{
+            $this->role_id='_';
+        }
+        
+    }
 }
