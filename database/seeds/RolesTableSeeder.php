@@ -11,8 +11,21 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-        $role = Role::updateOrCreate(['role' => 'manager']);
-        $role = Role::updateOrCreate(['role' => 'agent']);
+        // create permissions
+        /*Permission::updateOrCreate(['name' => 'create candidate']);//C
+        Permission::updateOrCreate(['name' => 'get candidate']);//R
+        Permission::updateOrCreate(['name' => 'edit candidate']);//U
+        Permission::updateOrCreate(['name' => 'delete candidate']);//D
+        Permission::updateOrCreate(['name' => 'list candidates']);*/
+
+        $role_manager = Role::firstOrCreate(['name' => 'manager']);
+        /*$role_manager->givePermissionTo('create candidate')
+            ->givePermissionTo('get candidate')
+            ->givePermissionTo('edit candidate')
+            ->givePermissionTo('delete candidate')
+            ->givePermissionTo('list candidates');*/
+        $role_agent = Role::firstOrCreate(['name' => 'agent']);
+        /*$role_agent->givePermissionTo('get candidate');*/
 
     }
 }
