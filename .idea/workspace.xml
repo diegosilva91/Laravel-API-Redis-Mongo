@@ -4,41 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="">
+    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="config for debug_bar and ide_helper">
       <change afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CandidateFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_045033_create_candidates_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CandidatesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/grocasa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/grocasa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_181302_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_194336_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +239,7 @@
       <workItem from="1599291945870" duration="91387000" />
       <workItem from="1599559549979" duration="49000" />
       <workItem from="1599814275568" duration="348000" />
-      <workItem from="1599851375065" duration="23765000" />
+      <workItem from="1599851375065" duration="24752000" />
     </task>
     <task id="LOCAL-00001" summary="install default project version 6">
       <created>1599275092051</created>
@@ -284,7 +262,84 @@
       <option name="project" value="LOCAL" />
       <updated>1599342058887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="setup for phpstorm">
+      <created>1599882097047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882097047</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test for create users">
+      <created>1599882165850</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882165850</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test for login success/failed with save token in cache redis">
+      <created>1599882275758</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882275758</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create migrations for users and support for mongo">
+      <created>1599882334426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882334426</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add default_string_length in service provider">
+      <created>1599882384109</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882384109</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create factories for users and candidates">
+      <created>1599882442441</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882442441</updated>
+    </task>
+    <task id="LOCAL-00010" summary="install mongo and jwt packages and providers, and debug_Bar">
+      <created>1599882582156</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882582156</updated>
+    </task>
+    <task id="LOCAL-00011" summary="DB options and seeders for users,roles and candidates">
+      <created>1599882636720</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882636720</updated>
+    </task>
+    <task id="LOCAL-00012" summary="config for debug_bar and ide_helper">
+      <created>1599882723250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882723250</updated>
+    </task>
+    <task id="LOCAL-00013" summary="handle exceptions when error exist in Token for pass the test(refactor)">
+      <created>1599882955041</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599882955041</updated>
+    </task>
+    <task id="LOCAL-00014" summary="guard defaults for api">
+      <created>1599883025731</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883025731</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +349,18 @@
     <MESSAGE value="install default project version 6" />
     <MESSAGE value="make users with roles" />
     <MESSAGE value="model Role" />
-    <option name="LAST_COMMIT_MESSAGE" value="model Role" />
+    <MESSAGE value="setup for phpstorm" />
+    <MESSAGE value="Test for create users" />
+    <MESSAGE value="test for login success/failed with save token in cache redis" />
+    <MESSAGE value="create migrations for users and support for mongo" />
+    <MESSAGE value="add default_string_length in service provider" />
+    <MESSAGE value="Create factories for users and candidates" />
+    <MESSAGE value="install mongo and jwt packages and providers, and debug_Bar" />
+    <MESSAGE value="DB options and seeders for users,roles and candidates" />
+    <MESSAGE value="config for debug_bar and ide_helper" />
+    <MESSAGE value="handle exceptions when error exist in Token for pass the test(refactor)" />
+    <MESSAGE value="guard defaults for api" />
+    <option name="LAST_COMMIT_MESSAGE" value="guard defaults for api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="99" y="27" width="819" height="691" key="#CLI_Interpreters" timestamp="1599869442235">
@@ -329,10 +395,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="126" y="134" key="#xdebugger.evaluate/72.27.1294.741@72.27.1294.741" timestamp="1599879019561" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1599342058749">
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1599883025625">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1599342058749" />
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1599883025625" />
     <state x="452" y="312" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599359234411">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
