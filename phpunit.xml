@@ -21,10 +21,12 @@
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
         <server name="CACHE_DRIVER" value="array"/>
-        <server name="DB_CONNECTION" value="sqlite"/>
-        <server name="DB_DATABASE" value=":memory:"/>
+        <server name="DB_CONNECTION" value="mongodb"/>
+        <server name="DB_DATABASE" value="accounts"/>
+        <server name="JWT_SECRET" value="I9B98mrE8zu9WlgM6WULLMw9ywKXsn05tuTgkoOam722WqdYO43oiyKMFdew5iZ9"/>
         <server name="MAIL_DRIVER" value="array"/>
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
+        <server name="CACHE_DRIVER" value="redis"/>
     </php>
 </phpunit>
