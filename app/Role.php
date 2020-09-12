@@ -2,10 +2,11 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-use Moloquent;
+//use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+//use Moloquent;
 
-class Role extends Moloquent
+class Role extends Eloquent
 {
     //
     protected $connection = 'mongodb';
