@@ -11,16 +11,20 @@
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
         "jenssegers/mongodb": "^3.6",
+        "jenssegers/mongodb-session": "^1.3",
         "laravel/framework": "^6.18.35",
         "laravel/tinker": "^2.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.4",
+        "barryvdh/laravel-ide-helper": "^2.8",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.5.8                                                                                                                                                                                                                                                                                                                                                                  "
     },
     "config": {
         "optimize-autoloader": true,
