@@ -21,13 +21,14 @@ use Illuminate\Support\Str;
 $factory->define(User::class, function (Faker $faker) {
     $created_at=$faker->dateTimeBetween('-5 years','now');
     $last_login=$faker->dateTimeBetween($created_at,'now');
-    $roleIds = \App\Role::select('id')->pluck('id');
+    //$roleIds = \App\Role::select('id')->pluck('id');
     return [
-        'username' => $faker->userName,
+        'username' => $faker->unique()->userName,
         'password' => $faker->password,
         'last_login' => $last_login,
         'is_active'=>$faker->boolean(60),
-        'role_id' => $faker->randomElement($roleIds),
+        //'role_id' => $faker->randomElement($roleIds),
         'created_at'=>$created_at
     ];
 });
+
