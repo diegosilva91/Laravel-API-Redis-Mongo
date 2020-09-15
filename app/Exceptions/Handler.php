@@ -2,8 +2,10 @@
 
 namespace App\Exceptions;
 
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
 
 class Handler extends ExceptionHandler
 {
@@ -50,14 +52,47 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if ($exception instanceof \Tymon\JWTAuth\Exceptions\TokenExpiredException) {
-            return response()->json(['error' => 'token is expired'], 400);
-        } elseif ($exception instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException) {
-            return response()->json(['error' => 'token is invalid'], 400);
-        } elseif ($exception instanceof \Tymon\JWTAuth\Exceptions\JWTException) {
-            return response()->json(['error' => 'token absent'], 400);
+        if ($exception instanceof UnauthorizedHttpException) {
+            $preException = $exception->getPrevious();
+            if ($preException instanceof \Tymon\JWTAuth\Exceptions\TokenExpiredException) {
+                return response()->json(['error' => 'token is expired'], 400);
+            } elseif ($preException instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException) {
+                return response()->json(['error' => 'token is invalid'], 400);
+            } elseif ($preException instanceof \Tymon\JWTAuth\Exceptions\JWTException) {
+                return response()->json(['error' => 'token absent'], 400);
+            } else if ($preException instanceof TokenBlacklistedException) {
+                return response()->json([
+                        'data' => null,
+                        'status' => false,
+                        'err_' => [
+                            'message' => 'Token Blacklisted',
+                            'code' => 1
+                        ]
+                    ]
+                );
+            }
+            if ($exception->getMessage() === 'Token not provided') {
+                return response()->json([
+                        'data' => null,
+                        'status' => false,
+                        'err_' => [
+                            'message' => 'Token not provided',
+                            'code' => 1
+                        ]
+                    ]
+                );
+            }else if( $exception->getMessage() === 'User not found'){
+                return response()->json([
+                        'data' => null,
+                        'status' => false,
+                        'err_' => [
+                            'message' => 'User Not Found',
+                            'code' => 1
+                        ]
+                    ]
+                );
+            }
         }
-
         return parent::render($request, $exception);
 
     }

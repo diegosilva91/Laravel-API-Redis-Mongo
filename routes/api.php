@@ -26,4 +26,14 @@ Route::group([
     Route::post('register', 'AuthController@register')->name('api.reg');
     Route::post('user', 'AuthController@user')->name('api.refresh');
 });
+Route::group([
+    'middleware' => ['jwt.auth.refresh'],
+    'prefix' => 'auth'
+], function () {
+    Route::post('lead','CandidateController@create');
+    Route::get('leads','CandidateController@index');
+    Route::get('lead/{id}','CandidateController@show');
+});
+
 Route::get('/users', 'UserController@home');
+
