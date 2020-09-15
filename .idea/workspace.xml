@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="routes for rgi">
-      <change afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_14_025518_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_045033_create_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_045033_create_candidates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_194336_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_040326_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
+    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="result of the test controllers">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +271,7 @@
       <workItem from="1599944592184" duration="10225000" />
       <workItem from="1600024504349" duration="11346000" />
       <workItem from="1600051813653" duration="2416000" />
-      <workItem from="1600095605602" duration="34155000" />
+      <workItem from="1600095605602" duration="34329000" />
     </task>
     <task id="LOCAL-00001" summary="install default project version 6">
       <created>1599275092051</created>
@@ -448,16 +427,48 @@
       <option name="project" value="LOCAL" />
       <updated>1599884757188</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="DB, migrations, seeeders, factory, debugbar">
+      <created>1600151140599</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151140599</updated>
+    </task>
+    <task id="LOCAL-00024" summary="register middlewares for jwt exceptions and classes">
+      <created>1600151201258</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151201258</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add models">
+      <created>1600151217612</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151217612</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add tests">
+      <created>1600151238629</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151238629</updated>
+    </task>
+    <task id="LOCAL-00027" summary="result of the test controllers">
+      <created>1600151256264</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1600151256264</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install default project version 6" />
-    <MESSAGE value="make users with roles" />
-    <MESSAGE value="model Role" />
     <MESSAGE value="setup for phpstorm" />
     <MESSAGE value="Test for create users" />
     <MESSAGE value="test for login success/failed with save token in cache redis" />
@@ -479,7 +490,11 @@
     <MESSAGE value="model for roles users" />
     <MESSAGE value="routes for api with middleware" />
     <MESSAGE value="DB, migrations, seeeders, factory, debugbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB, migrations, seeeders, factory, debugbar" />
+    <MESSAGE value="register middlewares for jwt exceptions and classes" />
+    <MESSAGE value="add models" />
+    <MESSAGE value="add tests" />
+    <MESSAGE value="result of the test controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="result of the test controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="99" y="27" width="819" height="691" key="#CLI_Interpreters" timestamp="1599869442235">
@@ -518,10 +533,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="477" y="142" key="#xdebugger.evaluate/72.27.1294.741@72.27.1294.741" timestamp="1600150906577" />
-    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1600151136724">
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1600151263058">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1600151136724" />
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1600151263058" />
     <state x="452" y="312" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599359234411">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -578,10 +593,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="72" y="27" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1599869444552" />
-    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599342066583">
+    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1600151267218">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1599342066583" />
+    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1600151267218" />
     <state width="647" height="370" key="XDebugger.FullValuePopup" timestamp="1600147959535">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
