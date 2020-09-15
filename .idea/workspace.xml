@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="config for debug_bar and ide_helper">
-      <change afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
+    <list default="true" id="c9caa8bb-7485-49bc-a254-e3006130d862" name="Default Changelist" comment="routes for rgi">
+      <change afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_14_025518_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ebe55d0-1df5-426a-933b-1329e764ff47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_045033_create_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_045033_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_194336_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_040326_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AuthControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,10 +173,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Constants" value="false" />
     <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/autoload.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -177,23 +188,55 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.ExampleTest.testLoginSuccess">
-    <configuration name="ExampleTest.testLoginSuccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.CandidateControllerTest.testGetLead">
+    <configuration name="CandidateControllerTest.testCreateFailed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testLoginSuccess" scope="Method" use_alternative_configuration_file="true" />
+      <TestRunner class="Tests\Feature\CandidateControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" method="testCreateFailed" scope="Method" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testRedisValueIsReturned" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="CandidateControllerTest.testCreateFailedTokenInvalid" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testRedisValueIsReturned" scope="Method" use_alternative_configuration_file="true" />
+      <TestRunner class="Tests\Feature\CandidateControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" method="testCreateFailedTokenInvalid" scope="Method" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CandidateControllerTest.testCreateSuccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CandidateControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" method="testCreateSuccess" scope="Method" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CandidateControllerTest.testGetLead" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CandidateControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" method="testGetLead" scope="Method" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CandidateControllerTest.testGetLeads" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CandidateControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php" method="testGetLeads" scope="Method" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -216,13 +259,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.ExampleTest.testLoginSuccess" />
-      <item itemvalue="PHPUnit.ExampleTest.testRedisValueIsReturned" />
+      <item itemvalue="PHPUnit.CandidateControllerTest.testCreateFailed" />
+      <item itemvalue="PHPUnit.CandidateControllerTest.testCreateSuccess" />
+      <item itemvalue="PHPUnit.CandidateControllerTest.testCreateFailedTokenInvalid" />
+      <item itemvalue="PHPUnit.CandidateControllerTest.testGetLeads" />
+      <item itemvalue="PHPUnit.CandidateControllerTest.testGetLead" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.ExampleTest.testLoginSuccess" />
-        <item itemvalue="PHPUnit.ExampleTest.testRedisValueIsReturned" />
+        <item itemvalue="PHPUnit.CandidateControllerTest.testGetLead" />
+        <item itemvalue="PHPUnit.CandidateControllerTest.testGetLeads" />
+        <item itemvalue="PHPUnit.CandidateControllerTest.testCreateFailedTokenInvalid" />
+        <item itemvalue="PHPUnit.CandidateControllerTest.testCreateFailed" />
+        <item itemvalue="PHPUnit.CandidateControllerTest.testCreateSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +288,11 @@
       <workItem from="1599291945870" duration="91387000" />
       <workItem from="1599559549979" duration="49000" />
       <workItem from="1599814275568" duration="348000" />
-      <workItem from="1599851375065" duration="24752000" />
+      <workItem from="1599851375065" duration="27727000" />
+      <workItem from="1599944592184" duration="10225000" />
+      <workItem from="1600024504349" duration="11346000" />
+      <workItem from="1600051813653" duration="2416000" />
+      <workItem from="1600095605602" duration="34155000" />
     </task>
     <task id="LOCAL-00001" summary="install default project version 6">
       <created>1599275092051</created>
@@ -339,7 +392,63 @@
       <option name="project" value="LOCAL" />
       <updated>1599883025731</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="setup my workspace for testing">
+      <created>1599883045980</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883045980</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add mongo,jwt and redis environments for testing">
+      <created>1599883099378</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883099378</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Model for User, methods for token, properties fillable,hiden,casts, dates, primary key and set id auto_increments">
+      <created>1599883221015</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883221015</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Model for Candidate.php extends of Mongo eloquent">
+      <created>1599883271226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883271226</updated>
+    </task>
+    <task id="LOCAL-00019" summary="validate username,password requests and create users,register methods">
+      <created>1599883525728</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883525729</updated>
+    </task>
+    <task id="LOCAL-00020" summary="set username for login auth and response if is auth ok">
+      <created>1599883594166</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883594166</updated>
+    </task>
+    <task id="LOCAL-00021" summary="model for roles users">
+      <created>1599883645608</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599883645608</updated>
+    </task>
+    <task id="LOCAL-00022" summary="routes for api with middleware">
+      <created>1599884757188</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1599884757188</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,13 +469,27 @@
     <MESSAGE value="config for debug_bar and ide_helper" />
     <MESSAGE value="handle exceptions when error exist in Token for pass the test(refactor)" />
     <MESSAGE value="guard defaults for api" />
-    <option name="LAST_COMMIT_MESSAGE" value="guard defaults for api" />
+    <MESSAGE value="setup my workspace for testing" />
+    <MESSAGE value="add mongo,jwt and redis environments for testing" />
+    <MESSAGE value="Model for User, methods for token, properties fillable,hiden,casts, dates, primary key and set id auto_increments" />
+    <MESSAGE value="Model for Candidate.php" />
+    <MESSAGE value="Model for Candidate.php extends of Mongo eloquent" />
+    <MESSAGE value="validate username,password requests and create users,register methods" />
+    <MESSAGE value="set username for login auth and response if is auth ok" />
+    <MESSAGE value="model for roles users" />
+    <MESSAGE value="routes for api with middleware" />
+    <MESSAGE value="DB, migrations, seeeders, factory, debugbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB, migrations, seeeders, factory, debugbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="99" y="27" width="819" height="691" key="#CLI_Interpreters" timestamp="1599869442235">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="99" y="27" width="819" height="691" key="#CLI_Interpreters/72.27.1294.741@72.27.1294.741" timestamp="1599869442235" />
+    <state x="348" y="79" width="732" height="644" key="#Inspections" timestamp="1599950437158">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="348" y="79" width="732" height="644" key="#Inspections/72.27.1294.741@72.27.1294.741" timestamp="1599950437158" />
     <state x="154" y="55" width="824" height="691" key="#Servers" timestamp="1599362381726">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -375,78 +498,78 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="471" y="27" width="824" height="691" key="#Test_Frameworks/72.27.1294.741@72.27.1294.741" timestamp="1599363261149" />
-    <state x="72" y="27" width="998" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599870224492">
+    <state x="72" y="27" width="998" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599956030449">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="27" width="998" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1599870224492" />
-    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1599365938324">
+    <state x="72" y="27" width="998" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1599956030449" />
+    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1600143152155">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1599365938324" />
+    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1600143152155" />
     <state x="494" y="115" width="430" height="580" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599344843933">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="494" y="115" width="430" height="580" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1599344843933" />
-    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599880771234">
+    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600147120628">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1294.741@72.27.1294.741" timestamp="1599880771234" />
-    <state x="126" y="134" key="#xdebugger.evaluate" timestamp="1599879019561">
+    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1294.741@72.27.1294.741" timestamp="1600147120628" />
+    <state x="477" y="142" key="#xdebugger.evaluate" timestamp="1600150906577">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="126" y="134" key="#xdebugger.evaluate/72.27.1294.741@72.27.1294.741" timestamp="1599879019561" />
-    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1599883025625">
+    <state x="477" y="142" key="#xdebugger.evaluate/72.27.1294.741@72.27.1294.741" timestamp="1600150906577" />
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1600151136724">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1599883025625" />
+    <state x="159" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1600151136724" />
     <state x="452" y="312" width="523" height="178" key="ComposerInitDialogKey" timestamp="1599359234411">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="452" y="312" width="523" height="178" key="ComposerInitDialogKey/72.27.1294.741@72.27.1294.741" timestamp="1599359234411" />
-    <state width="647" height="478" key="DebuggerActiveHint" timestamp="1599417265663">
+    <state width="647" height="478" key="DebuggerActiveHint" timestamp="1600140486214">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="647" height="478" key="DebuggerActiveHint/72.27.1294.741@72.27.1294.741" timestamp="1599417265663" />
+    <state width="647" height="478" key="DebuggerActiveHint/72.27.1294.741@72.27.1294.741" timestamp="1600140486214" />
     <state x="411" y="156" width="309" height="489" key="EnvironmentVariablesDialog" timestamp="1599868546675">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="411" y="156" width="309" height="489" key="EnvironmentVariablesDialog/72.27.1294.741@72.27.1294.741" timestamp="1599868546675" />
-    <state x="101" y="119" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599868536892">
+    <state x="101" y="119" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599951173434">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="101" y="119" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1599868536892" />
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1599880520349">
+    <state x="101" y="119" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1599951173434" />
+    <state width="1248" height="146" key="GridCell.Tab.0.bottom" timestamp="1600150975297">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1599880520349" />
-    <state width="1248" height="172" key="GridCell.Tab.0.center" timestamp="1599880520348">
+    <state width="1248" height="146" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1600150975297" />
+    <state width="1248" height="146" key="GridCell.Tab.0.center" timestamp="1600150975296">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1599880520348" />
-    <state width="1248" height="172" key="GridCell.Tab.0.left" timestamp="1599880520348">
+    <state width="1248" height="146" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1600150975296" />
+    <state width="1248" height="146" key="GridCell.Tab.0.left" timestamp="1600150975296">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1599880520348" />
-    <state width="1248" height="172" key="GridCell.Tab.0.right" timestamp="1599880520349">
+    <state width="1248" height="146" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1600150975296" />
+    <state width="1248" height="146" key="GridCell.Tab.0.right" timestamp="1600150975297">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1599880520349" />
-    <state width="1248" height="215" key="GridCell.Tab.1.bottom" timestamp="1599880469179">
+    <state width="1248" height="146" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1600150975297" />
+    <state width="1248" height="146" key="GridCell.Tab.1.bottom" timestamp="1600150991869">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="215" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1599880469179" />
-    <state width="1248" height="215" key="GridCell.Tab.1.center" timestamp="1599880469178">
+    <state width="1248" height="146" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1600150991869" />
+    <state width="1248" height="146" key="GridCell.Tab.1.center" timestamp="1600150991868">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="215" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1599880469178" />
-    <state width="1248" height="215" key="GridCell.Tab.1.left" timestamp="1599880469178">
+    <state width="1248" height="146" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1600150991868" />
+    <state width="1248" height="146" key="GridCell.Tab.1.left" timestamp="1600150991867">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="215" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1599880469178" />
-    <state width="1248" height="215" key="GridCell.Tab.1.right" timestamp="1599880469178">
+    <state width="1248" height="146" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1600150991867" />
+    <state width="1248" height="146" key="GridCell.Tab.1.right" timestamp="1600150991869">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="215" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1599880469178" />
+    <state width="1248" height="146" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1600150991869" />
     <state x="377" y="117" width="673" height="568" key="NewPhpClassDialog" timestamp="1599298633173">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -459,14 +582,14 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1599342066583" />
-    <state width="647" height="370" key="XDebugger.FullValuePopup" timestamp="1599433942236">
+    <state width="647" height="370" key="XDebugger.FullValuePopup" timestamp="1600147959535">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="647" height="370" key="XDebugger.FullValuePopup/72.27.1294.741@72.27.1294.741" timestamp="1599433942236" />
-    <state x="552" y="287" width="367" height="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1599452038686">
+    <state width="647" height="370" key="XDebugger.FullValuePopup/72.27.1294.741@72.27.1294.741" timestamp="1600147959535" />
+    <state x="552" y="287" width="377" height="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600149047821">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="552" y="287" width="367" height="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/72.27.1294.741@72.27.1294.741" timestamp="1599452038686" />
+    <state x="552" y="287" width="377" height="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/72.27.1294.741@72.27.1294.741" timestamp="1600149047821" />
     <state x="600" y="287" width="352" height="235" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1599279907191">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -475,6 +598,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="72" y="27" width="1284" height="741" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/72.27.1294.741@72.27.1294.741" timestamp="1599351632878" />
+    <state x="377" y="204" width="674" height="393" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1600037796156">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="377" y="204" width="674" height="393" key="com.jetbrains.php.test.PhpNewTestDialog/72.27.1294.741@72.27.1294.741" timestamp="1600037796156" />
     <state x="410" y="136" width="618" height="580" key="find.popup" timestamp="1599442924275">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -483,62 +610,62 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="383" y="174" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1599432790461" />
-    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599881937412">
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600150405633">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1599881937412" />
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1600150405633" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
           <line>24</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
           <line>26</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>55</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>51</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>24</line>
+          <line>52</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>27</line>
+          <line>56</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>36</line>
+          <line>65</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>28</line>
+          <line>57</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>102</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>112</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>98</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>108</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -607,13 +734,8 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/User.php</url>
-          <line>21</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>26</line>
+          <line>55</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -627,8 +749,8 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>130</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -677,53 +799,301 @@
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>76</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>86</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>81</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>91</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>38</line>
+          <line>67</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>37</line>
+          <line>66</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>43</line>
+          <line>69</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>57</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>67</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>68</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
+          <line>38</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>55</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>73</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>56</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>49</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>64</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>62</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>56</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>57</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>58</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>59</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>67</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>50</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>51</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>49</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>46</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Exceptions/Handler.php</url>
+          <line>62</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Middleware/JWTAuthRefresh.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>77</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>80</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/User.php</url>
+          <line>134</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/User.php</url>
+          <line>135</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>91</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Feature/CandidateControllerTest.php</url>
+          <line>90</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>104</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>110</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>108</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/CandidateController.php</url>
+          <line>105</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/tests/Feature/ExampleTest.php</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>44</line>
           <properties>
             <option name="className" value="\Tests\Feature\ExampleTest" />
             <option name="methodName" value="testLoginSuccess" />
           </properties>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
+          <line>27</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\AuthController" />
+            <option name="methodName" value="register" />
+          </properties>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/tests/Feature/AuthControllerTest.php</url>
+          <line>47</line>
+          <properties>
+            <option name="className" value="\Tests\Feature\AuthControllerTest" />
+            <option name="methodName" value="testRegister" />
+          </properties>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
