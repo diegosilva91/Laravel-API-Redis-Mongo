@@ -7,7 +7,33 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Candidate extends Eloquent
 {
+    /**
+     * @var string
+     */
+    protected $connection = 'mongodb';
     //
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'source', 'owner','created_by','created_at'
+    ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden=['_id','updated_at'];
+
+    /**
+     * @var string[]
+     */
+    protected $dates = ['created_at'];
+
     /**
      * @var integer
      */

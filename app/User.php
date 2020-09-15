@@ -24,6 +24,11 @@ class User extends Eloquent implements AuthenticatableContract, AuthorizableCont
     use Authenticatable, Authorizable, CanResetPassword;
     use Notifiable;
     //use HasRoles;
+    /**
+     * Connection DB
+     *
+     * @var string mon
+     */
     protected $connection = 'mongodb';
     //protected $collection = 'users';
 
@@ -83,7 +88,7 @@ class User extends Eloquent implements AuthenticatableContract, AuthorizableCont
     public function createdBy(){
         return $this->hasMany(Candidate::class,'created_by');
     }
-/*
+
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
@@ -107,12 +112,27 @@ class User extends Eloquent implements AuthenticatableContract, AuthorizableCont
     public function assignRole($role="manager")
     {
         $role=\App\Role::where(["name"=>$role])->first();
-        if($role){
-            $this->role_id=$role->pluck('id');
+        if(isset($role)){
+            $this->role_id=$role->id;
         }
         else{
             $this->role_id='_';
         }
-        
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class,'roles','id');
+    }
+
+    public static function findByRole(Role $role)
+    {
+        return $role->users()->get();
+    }
+
+    public function hasRole($role)
+    {
+        $role=\App\Role::where(["name"=>$role])->first();
+        return $this->roles()->get()->contains($role);
     }
 }
