@@ -12,20 +12,56 @@ use phpDocumentor\Reflection\Types\String_;
 use Tests\TestCase;
 
 
-class ExampleTest extends TestCase
+class AuthControllerTest extends TestCase
 {
     use DatabaseMigrations;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        //Artisan::call('migrate:refresh');
+        //$this->seed();
+    }
     /**
      * A basic test example.
      *
      * @return void
      */
+
     public function testBasicTest()
     {
         $response = $this->get('/');
+        $user=['username'=>'tester','password'=>'PASSWORD'];
+        $username = $user['username'];
+        $password = $user['password'];
 
         $response->assertStatus(200);
         $response->assertOk();
+    }
+
+    /**
+     *  Register users
+     *
+     *
+     */
+    public function testRegister()
+    {
+        $baseUrl = Config::get('app.url') . '/api/auth/register';
+        $user=['username'=>'tester','password'=>'PASSWORD'];
+        $username = $user['username'];
+        $password = $user['password'];
+
+        $response = $this->json('POST', $baseUrl . '/', [
+            'username' => $username,
+            'password' => $password
+        ]);
+
+        $response
+            ->assertStatus(200)
+            ->assertJsonStructure([
+                'user', 'created',
+            ]);
     }
     /**
      * General access token success
@@ -53,7 +89,7 @@ class ExampleTest extends TestCase
         //Cache::shouldReceive('connection')->once()->with('default')->andReturnTrue();
 
         Cache::shouldReceive('store->redis')->shouldReceive('put')
-            ->with('token', $token_receive,0)
+            ->with('token', $token_receive)
             ->andReturn(true);
         //$cache=Cache::shouldReceive('store->redis')->shouldReceive('put')->once()->with($token_receive)->andReturn($token_receive);
         //$cache->andReturnTrue();
